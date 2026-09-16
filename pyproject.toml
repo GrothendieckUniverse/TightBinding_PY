@@ -1,0 +1,21 @@
+[project]
+name = "tightbinding-py"
+version = "0.2.0"
+description = "Faithful Python port of TightBinding.jl — real-space tight-binding models for condensed-matter studies"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "xiaodong-hu", email = "hxd.phys@gmail.com" }
+]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "matplotlib>=3.8",
+    "igraph>=0.11",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
